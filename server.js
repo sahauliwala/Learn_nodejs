@@ -10,7 +10,7 @@ const Person = require('./model/person');
  const PORT = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.send('Hello Pawanjeet singh')
 })
 
 const proutes = require('./routes/Proutes');

@@ -2,8 +2,8 @@
   //const URL = "mongodb+srv://(user name):<paswwd>@ mogodb atlas/";
   
   require('dotenv').config();
-  const URL =process.env.MONGODB_URL ;
-  
+  //const URL =process.env.MONGODB_URL ;
+  const URL = process.env.MONGODB_ATLAS_URL;
   mongoose.connect(URL, {}
   ).then(() => {
       console.log("Database connected successfully")
