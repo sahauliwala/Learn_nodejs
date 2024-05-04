@@ -2,7 +2,6 @@ const express = require('express');
 const router = express();
 const Person = require('../model/person');
 
-
 router.post('/',async(req,res)=>{
 
     try{

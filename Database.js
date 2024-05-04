@@ -1,7 +1,9 @@
   const mongoose = require('mongoose');
-  // const URL = "mongodb://localhost:27017/mydata";
-  const URL = "mongodb+srv://pawanhp99:pawanjeet@cluster0.mc2hyiy.mongodb.net/";
-
+  //const URL = "mongodb+srv://pawanhp99:pawanjeet@cluster0.mc2hyiy.mongodb.net/";
+  
+  require('dotenv').config();
+  const URL =process.env.MONGODB_URL ;
+  
   mongoose.connect(URL, {}
   ).then(() => {
       console.log("Database connected successfully")
